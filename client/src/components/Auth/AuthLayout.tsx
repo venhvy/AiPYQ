@@ -7,8 +7,7 @@ import { BlinkAnimation } from './BlinkAnimation';
 import { Banner } from '../Banners';
 import Footer from './Footer';
 
-// 添加GoogleIconChat导入
-import GoogleIconChat from '@librechat/client/src/svgs/GoogleIconChat';
+import { GoogleIconChat } from '@librechat/client';
 
 function AuthLayout({
   children,

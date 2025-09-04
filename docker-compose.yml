@@ -31,6 +31,8 @@ services:
       - ./images:/app/client/public/images
       - ./uploads:/app/uploads
       - ./logs:/app/api/logs
+      - ./client/src:/app/client/src
+      - ./packages/client/src:/app/packages/client/src
   mongodb:
     container_name: chat-mongodb
     image: mongo
