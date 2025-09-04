@@ -7,6 +7,9 @@ import { BlinkAnimation } from './BlinkAnimation';
 import { Banner } from '../Banners';
 import Footer from './Footer';
 
+// 添加GoogleIconChat导入
+import GoogleIconChat from '@librechat/client/src/svgs/GoogleIconChat';
+
 function AuthLayout({
   children,
   header,
@@ -60,12 +63,9 @@ function AuthLayout({
     <div className="relative flex min-h-screen flex-col bg-white dark:bg-gray-900">
       <Banner />
       <BlinkAnimation active={isFetching}>
-        <div className="mt-6 h-10 w-full bg-cover">
-          <img
-            src="assets/logo.png"
-            className="h-full w-full object-contain"
-            alt={localize('com_ui_logo', { 0: startupConfig?.appTitle ?? 'LibreChat' })}
-          />
+        {/* 将PNG logo替换为Google SVG图标 */}
+        <div className="mt-6 h-10 w-full flex items-center justify-center">
+          <GoogleIconChat size={40} className="text-black dark:text-white" />
         </div>
       </BlinkAnimation>
       <DisplayError />
