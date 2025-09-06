@@ -1,0 +1,13 @@
+{
+  "name": "simple-dify-proxy",
+  "version": "1.0.0",
+  "description": "Simple proxy for Dify API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.7"
+  }
+}
